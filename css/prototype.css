@@ -882,6 +882,7 @@ main {
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(9, auto);
 		grid-gap: 20px;
+		z-index: 1000;
 	}
 
 	.timeline-close {
