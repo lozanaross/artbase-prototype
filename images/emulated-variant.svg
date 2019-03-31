@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.762 21.87">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3e3e3e;
+        stroke-linejoin: bevel;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_240" data-name="Group 240" transform="translate(0 -0.005)">
+    <path id="Path_393" data-name="Path 393" class="cls-1" d="M6.57,13.48.38,16.02l12,4.93,12-4.93-6.19-2.54"/>
+    <path id="Path_394" data-name="Path 394" class="cls-1" d="M18.19,8.4l6.19,2.54-6.19,2.54-5.81,2.39L6.57,13.48.38,10.94,6.57,8.4"/>
+    <path id="Path_395" data-name="Path 395" class="cls-1" d="M18.19,8.4l-5.81,2.38L6.57,8.4.38,5.85l12-4.92,12,4.92Z"/>
+  </g>
+</svg>

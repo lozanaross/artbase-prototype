@@ -1,0 +1,300 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ArtBase prototype</title>
+	<link rel="stylesheet" type="text/css" href="css/prototype.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/prototype.js"></script>
+</head>
+<body>
+
+<!--Nav bar-->
+<div class="nav-bar">
+	<div class="logos">
+		<a href="http://rhizome.org/"><img class="logo" src="images/Rhizome_Logo_black.png"></a>
+		<img class="logo-mobile" src="images/Rhizome_Logo_black_mobile.png">
+	</div>
+	<div class="artbase-logo"> <a href="index.html">ARTBASE</a></div>
+	<div class="menu">
+		<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+		<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+		<ul><a href="out-of-scope.html">Curated selections</a></ul>
+	</div>
+	<div class="search-box">
+		<input type="text" placeholder="Keyword search">
+		<a href="search-results.html"><img src="images/search_icon.svg"></a>
+	</div>
+</div>
+<!--End of navbar-->
+
+<!--End of mobile navbar-->
+<div class="mobile-header">
+  <input type="checkbox" class="openSidebar" id="openSidebar">
+  <label for="openSidebar" class="sidebarIconToggle">
+    <img class="icon-1" src="images/mobile-menu-icon.svg">
+    <img class="icon-2" src="images/close-icon-dark.svg">
+  </label>
+  <div id="sidebar">
+		<div class="mobile-only-menu">
+			<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+			<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+			<ul><a href="out-of-scope.html">Curated selections</a></ul>
+				<div class="search-box-mobile">
+					<input type="text" placeholder="Keyword search">
+					<a href="search-results.html"><img src="images/search_icon.svg"></a>
+				</div>
+				<ul class="position-bottom-edge"><a href="http://rhizome.org/">Back to rhizome.org</a></ul>
+		</div>
+   </div>
+</div>
+<!--End of mobile navbar-->
+
+
+<!--Main content-->
+<main>
+
+	<!--Main meta info area-->
+	<div class="page-info"> 
+		<h4>Access state: <a href="access-state-medium.html">Medium</a></h4>  
+	</div>
+
+
+	<!--Filters and sorting area-->
+	<div class="browse-filters"> 
+			Order:
+			<div class="filter-select">
+				<select>
+					<option selected><h5>Order alphabetically by title</h5></option>
+					<option><h5>Order alphabetically by artist (N/A)</h5></option>
+					<option><h5>Order by inception date – ascending (N/A)</h5></option>
+					<option><h5>Order by inception date – descending (N/A)</h5></option>
+				</select>
+			</div>
+	</div>
+	<div class="browse-filters"> 
+			Filter:
+			<div class="filter-select">
+				<select id="filter-variants">
+					<option value="artworks"><h5>Show artworks only (N/A)</h5></option>
+					<option value="variants" selected><h5>Show artworks and variants</h5></option>
+					<option value="everything"><h5>Show everything (N/A)</h5></option>
+				</select>
+			</div>
+	</div>
+	<div class="browse-filters"> 
+			View:
+			<div class="filter-select">
+				<select>
+					<option selected><h5>Thumbnail grid</h5></option>
+					<option><h5>List view (N/A)</h5></option>
+					<option><h5>Timeline view (N/A)</h5></option>
+				</select>
+			</div>
+	</div>
+
+	<!--Artwork & variant thumbs-->
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/webarchive-variant.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/artist-link.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	<div class="artwork-thumb"> 
+		<a href="variant-template.html"><img src="images/test-image.jpg"></a>
+		<div class="thumb-title">
+			<h6><img class="access-state-icon" src="images/access-state-medium.svg"><a href="artwork-template.html">Artwork title (variant)</a></h6>
+		</div>
+		<div class="thumb-date">
+			<h6>[inception date]</h6>
+		</div>
+		<div class="thumb-author">
+			<h6><a href="artist-template.html">Artist name</a></h6>
+		</div>
+		<div class="variant-icon-area">
+			<img src="images/cloned-copy.svg">
+		</div>
+	</div>
+	
+
+	<!--More archive pages-->
+	<div class="archive-page-links">
+		<span style="color: #3E3E3E;">< 1</span>, 2, 3, 4, 5, 6, 7, 8, ... 47 >
+	</div>
+
+	<!--Search query box-->
+	<div class="search-query-area">
+		<!-- Expandable button-->
+		<button class="collapsible query-area"><h3>Search Query Toolbar</h3></button>
+		<!--Description collapsible hidden content-->
+		<div class="content">
+			<div class="query-content">
+				<div class="compose-query">
+					<div class="query-selectors">
+						<p>What thing or type of thing?</p>
+						<div>
+						<input list="items" name="item" placeholder="e.g. all artworks">
+							  <datalist id="items">
+							    <option value="artwork">
+							    <option value="artist">
+							    <option value="variant">
+							    <option value="other example items...">
+							  </datalist>
+						</div>
+						<p class="add-rules"><img src="images/circle-plus-icon.svg">Add another search rule</p>
+					</div>
+					<div class="query-selectors">
+						<p>What type of relationship?</p>
+						<div>
+						<input list="properties" name="property" placeholder="e.g. attributed to">
+							  <datalist id="properties">
+							    <option value="associated with">
+							    <option value="inception">
+							    <option value="generated by">
+							    <option value="other example properties...">
+							  </datalist>
+						</div>
+						<p class="add-rules"><img src="images/circle-plus-icon.svg">Qualify the relationship</p>
+					</div>
+					<div class="query-selectors">
+						<p>To which thing or type of thing?</p>
+						<div>
+						<input list="values" name="vlaue" placeholder="e.g. artist name">
+							  <datalist id="values">
+							    <option value="access state value">
+							    <option value="date value">
+							    <option value="generation activity value">
+							    <option value="other example values...">
+							  </datalist>
+						</div>
+					</div>
+				</div>
+				<div class="run-query">
+					<div class="run-query-button">
+						<a href="out-of-scope.html"><p>Run query</p></a>
+					</div>
+					<div class="query-selectors write-query">
+					<p><a href="out-of-scope.html">Or write your own query</a></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+</body>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3e3e3e;
+      }
+    </style>
+  </defs>
+  <g id="Group_243" data-name="Group 243" transform="translate(-1717 -1631)">
+    <rect id="Rectangle_918" data-name="Rectangle 918" class="cls-1" width="25" height="5" transform="translate(1717 1641)"/>
+    <rect id="Rectangle_925" data-name="Rectangle 925" class="cls-1" width="25" height="5" transform="translate(1732 1631) rotate(90)"/>
+  </g>
+</svg>

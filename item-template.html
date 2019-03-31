@@ -1,0 +1,157 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ArtBase prototype</title>
+	<link rel="stylesheet" type="text/css" href="css/prototype.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/prototype.js"></script>
+</head>
+<body>
+
+<!--Nav bar-->
+<div class="nav-bar">
+	<div class="logos">
+		<a href="http://rhizome.org/"><img class="logo" src="images/Rhizome_Logo_black.png"></a>
+		<img class="logo-mobile" src="images/Rhizome_Logo_black_mobile.png">
+	</div>
+	<div class="artbase-logo"> <a href="index.html">ARTBASE</a></div>
+	<div class="menu">
+		<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+		<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+		<ul><a href="out-of-scope.html">Curated selections</a></ul>
+	</div>
+	<div class="search-box">
+		<input type="text" placeholder="Keyword search">
+		<a href="search-results.html"><img src="images/search_icon.svg"></a>
+	</div>
+</div>
+<!--End of navbar-->
+
+<!--End of mobile navbar-->
+<div class="mobile-header">
+  <input type="checkbox" class="openSidebar" id="openSidebar">
+  <label for="openSidebar" class="sidebarIconToggle">
+    <img class="icon-1" src="images/mobile-menu-icon.svg">
+    <img class="icon-2" src="images/close-icon-dark.svg">
+  </label>
+  <div id="sidebar">
+		<div class="mobile-only-menu">
+			<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+			<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+			<ul><a href="out-of-scope.html">Curated selections</a></ul>
+				<div class="search-box-mobile">
+					<input type="text" placeholder="Keyword search">
+					<a href="search-results.html"><img src="images/search_icon.svg"></a>
+				</div>
+				<ul class="position-bottom-edge"><a href="http://rhizome.org/">Back to rhizome.org</a></ul>
+		</div>
+   </div>
+</div>
+<!--End of mobile navbar-->
+
+
+<!--Main content-->
+<main>
+
+	<!--Main meta info area-->
+	<div class="page-title"> 
+		<h1>Template page for items</h1> 
+	</div>
+	<div class="data-type">
+		<div class="data-type-field">Item</div>
+	</div>
+	<!--End of main meta info area-->
+
+	<div class="linked-content">
+		<a href="out-of-scope.html">Artworks associated with this item</a>
+	</div>
+
+	<!--Metadata grid area-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Description
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section">
+	  			<p>A short description of the item. To see an example property page, see <a href="external-media-damaged.html">"damaged external media"</a> or <a href="webrecorder-capture.html">"Webrecorder capture"</a>. </p>
+  			</div>
+		</div>
+	</div>
+
+	<!--Metadata grid area #2-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Associated properties
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section" style="padding-bottom: 20px;">
+  				<div class="associated-values">
+	  			<h4><a href="property-template.html">Example property</a></h4>
+	  			<p class="value-description-last">Description: Short description text of this property.</p>
+	  			</div>
+  			</div>
+		</div>
+	</div>
+
+<!--Metadata grid area #3-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Matadata
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section" style="padding-bottom: 20px;">
+  				<h4><a href="property-template.html">Property:</a> <a href="item-template.html" class="item-link">Value</a></h4>
+  				<h4><a href="property-template.html">Property:</a> <a href="item-template.html" class="item-link">Value</a></h4>
+  				<h4><a href="property-template.html">Property:</a> <a href="item-template.html" class="item-link">Value</a></h4>
+  			</div>
+		</div>
+	</div>
+
+		<!--Metadata grid area #4-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Associated [other items] 
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section" style="padding-bottom: 20px;">
+  				<div class="associated-values">
+  				<h4><a href="item-template.html">Example item</a></h4>
+	  			<p class="value-description">Description: Short description text of this item.</p>
+	  			<h4><a href="item-template.html">Example item</a></h4>
+	  			<p class="value-description">Description: Short description text of this item.</p>
+	  			<h4><a href="item-template.html">Example item</a></h4>
+	  			<p class="value-description-last">Description: Short description text of this item.</p>
+	  			</div>
+  			</div>
+		</div>
+	</div>
+
+	<!--End of metadata area-->
+
+	
+</main>
+<!--End of main area-->
+
+
+</body>

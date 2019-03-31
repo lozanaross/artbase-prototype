@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3e3e3e;
+      }
+    </style>
+  </defs>
+  <g id="Backward_arrow" data-name="Backward arrow" transform="translate(-72 -474)">
+    <path id="Path_10" data-name="Path 10" class="cls-1" d="M12,0,9.818,2.182l8.26,8.26H0v3.117H18.078l-8.26,8.26L12,24,24,12Z" transform="translate(96 498) rotate(180)"/>
+  </g>
+</svg>

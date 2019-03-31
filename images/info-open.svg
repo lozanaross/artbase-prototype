@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #2740ff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2740ff;
+        font-size: 18px;
+        font-family: HKGrotesk-Bold, HK Grotesk;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-1870 -10)">
+    <g id="Rectangle_4" data-name="Rectangle 4" class="cls-1" transform="translate(1876 10)">
+      <rect class="cls-3" width="24" height="24"/>
+      <rect class="cls-4" x="1" y="1" width="22" height="22"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" class="cls-1" transform="translate(1870 16)">
+      <rect class="cls-3" width="24" height="24"/>
+      <rect class="cls-4" x="1" y="1" width="22" height="22"/>
+    </g>
+    <text id="i" class="cls-2" transform="translate(1880 34)"><tspan x="0" y="0">i</tspan></text>
+  </g>
+</svg>

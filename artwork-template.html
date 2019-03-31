@@ -1,0 +1,745 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ArtBase prototype</title>
+	<link rel="stylesheet" type="text/css" href="css/prototype.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/prototype.js"></script>
+</head>
+<body>
+
+<!--Nav bar-->
+<div class="nav-bar">
+	<div class="logos">
+		<a href="http://rhizome.org/"><img class="logo" src="images/Rhizome_Logo_black.png"></a>
+		<img class="logo-mobile" src="images/Rhizome_Logo_black_mobile.png">
+	</div>
+	<div class="artbase-logo"> <a href="index.html">ARTBASE</a></div>
+	<div class="menu">
+		<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+		<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+		<ul><a href="out-of-scope.html">Curated selections</a></ul>
+	</div>
+	<div class="search-box">
+		<input type="text" placeholder="Keyword search">
+		<a href="search-results.html"><img src="images/search_icon.svg"></a>
+	</div>
+</div>
+<!--End of navbar-->
+
+<!--End of mobile navbar-->
+<div class="mobile-header">
+  <input type="checkbox" class="openSidebar" id="openSidebar">
+  <label for="openSidebar" class="sidebarIconToggle">
+    <img class="icon-1" src="images/mobile-menu-icon.svg">
+    <img class="icon-2" src="images/close-icon-dark.svg">
+  </label>
+  <div id="sidebar">
+		<div class="mobile-only-menu">
+			<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+			<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+			<ul><a href="out-of-scope.html">Curated selections</a></ul>
+				<div class="search-box-mobile">
+					<input type="text" placeholder="Keyword search">
+					<a href="search-results.html"><img src="images/search_icon.svg"></a>
+				</div>
+				<ul class="position-bottom-edge"><a href="http://rhizome.org/">Back to rhizome.org</a></ul>
+		</div>
+   </div>
+</div>
+<!--End of mobile navbar-->
+
+<!--Main content-->
+<main>
+
+	<!--Main meta info area-->
+	<div class="page-title"> 
+		<h1>Artwork Title</h1> 
+	</div>
+	<div class="creation-time">
+		<div class="artist-name-button"><a href="artist-template.html">Artist Name</a></div>
+		<div class="timeline-button"> Timeline 2001~ </div>
+		<div class="timeline-full-screen">
+			<div class="page-title reverse-color">
+	  				<h1>Artwork Title: Timeline 2001~</h1> 
+	  			</div>
+	  			<div class="timeline-close">
+	  				<img src="images/close-icon.svg">
+	  			</div>
+	  			<div class="timeline-main-line"></div>
+	  			<div class="area area-1-9">
+		  			<div class="date blank">x</div>
+		  			<div class="date-dash blank"></div>
+		  			<div class="connector-dash blank"></div>
+		  			<div class="horizontal-connector"></div>
+		  		</div>
+	  			<div class="area area-1">
+		  			<div class="date">2001</div>
+		  			<div class="date-dash"></div>
+		  			<div class="connector-dash"></div>
+		  			<div class="thumbnail-image">
+		  				<div class="thumb-overlay">
+		  				<img src="images/test-image-thumb.png">
+		  				<img class="access-overlay-sm" src="images/artist-link.svg">
+		  				</div>
+		  				<div class="state-hover">
+							<p class="hover-title"> Access state: </p>
+							<p> <a href="access-state-unknown.html">Unknown – Access point has not been audited by an archivist</a></p><br>
+							<p class="hover-action"> <a href="out-of-scope.html">Report an issue?</a></p>
+						</div>
+		  			</div>
+		  			<p class="thumbnail-caption"><img class="access-state-icon" src="images/access-state-unknown.svg"> Artist link: <a href="out-of-scope.html">www.example.com</a></p>
+		  		</div>
+		  		<div class="area area-1-2">
+		  			<div class="date blank">x</div>
+		  			<div class="date-dash"></div>
+		  			<div class="short-connector-dash"></div>
+		  			<div class="thumbnail-image">
+		  				<img class="circle-shape" src="images/exhibit1.jpg">
+		  			</div>
+		  			<p class="thumbnail-caption"><a href="out-of-scope.html">Exhibition title</a></p>
+		  		</div>
+		  		<div class="area area-2">
+		  			<div class="date">2003</div>
+		  			<div class="date-dash"></div>
+		  			<div class="long-connector-dash"></div>
+		  			<div class="thumbnail-image">
+		  				<div class="thumb-overlay">
+		  					<img src="images/test-image-thumb.png">
+		  					<img class="access-overlay-sm" src="images/cloned-copy.svg">
+		  				</div>
+		  				<div class="state-hover">
+							<p class="hover-title"> Access state: </p>
+							<p><a href="access-state-medium.html">Medium – Access point has some upsupported or damaged dependencies</a></p><br>
+							<p class="hover-action"><a href="out-of-scope.html">Report an issue?</a></p>
+						</div>
+		  			</div>
+		  			<p class="thumbnail-caption"><img class="access-state-icon" src="images/access-state-medium.svg"> ArtBase variant: <a href="out-of-scope.html">archive.rhizome.org/</br>example.com</a></p>
+		  		</div>
+		  		<div class="area area-3">
+		  			<div class="date">2005</div>
+		  			<div class="date-dash"></div>
+		  			<div class="short-connector-dash"></div>
+					<div class="thumbnail-image">
+		  				<img class="circle-shape" src="images/exhibit2.jpg">
+		  			</div>		  			
+		  			<p class="thumbnail-caption"><a href="out-of-scope.html">Exhibition title</a></p>
+		  		</div>
+		  		<div class="area area-4">
+		  			<div class="date">2007</div>
+		  			<div class="date-dash"></div>
+		  		</div>
+		  		<div class="area area-5">
+		  			<div class="date">2009</div>
+		  			<div class="date-dash"></div>
+		  		</div>
+		  		<div class="area area-6">
+		  			<div class="date">2011</div>
+		  			<div class="date-dash"></div>
+		  			<div class="short-connector-dash"></div>
+					<div class="thumbnail-image">
+		  				<img class="circle-shape" src="images/exhibit3.jpg">
+		  			</div>		  			
+		  			<p class="thumbnail-caption"><a href="out-of-scope.html">Exhibition title</a></p>
+		  		</div>
+		  		<div class="area area-7">
+		  			<div class="date">2013</div>
+		  			<div class="date-dash"></div>
+		  		</div>
+		  		<div class="area area-8">
+		  			<div class="date">2015</div>
+		  			<div class="date-dash"></div>		  			
+		  			<div class="long-connector-dash"></div>
+		  			<div class="thumbnail-image">
+		  				<div class="thumb-overlay">
+		  					<img src="images/test-image-thumb.png">
+		  					<img class="access-overlay-lg" src="images/webarchive-variant.svg">
+		  				</div>
+		  				<div class="state-hover">
+							<p class="hover-title"> Access state: </p>
+							<p><a href="access-state-good.html">Good – Access point has few upsupported or damaged dependencies</a></p><br>
+							<p class="hover-action"><a href="out-of-scope.html">Report an issue?</a></p>
+						</div>
+		  			</div>
+		  			<p class="thumbnail-caption"><img class="access-state-icon" src="images/access-state-good.svg"> ArtBase variant: <a href="webenact-template.html">webenact.rhizome.org/</br>example.com</a></p>
+		  		</div>
+		  		<div class="area area-9">
+		  			<div class="date">2017</div>
+		  			<div class="date-dash"></div>
+		  			<div class="connector-dash"></div>
+		  			<p class="empty">Link no longer active</p>
+		  		</div>
+		  		<div class="area area-9-10">
+		  			<div class="date blank">x</div>
+		  			<div class="date-dash"></div>
+		  			<div class="long-connector-dash"></div>
+		  			<div class="thumbnail-image">
+		  				<div class="thumb-overlay">
+		  					<img src="images/test-image-thumb.png">
+		  					<img class="access-overlay-lg" src="images/emulated-variant.svg">
+		  				</div>
+		  				<div class="state-hover">
+							<p class="hover-title"> Access state: </p>
+							<p><a href="access-state-good.html">Good – Access point has few upsupported or damaged dependencies</a></p><br>
+							<p class="hover-action"><a href="out-of-scope.html">Report an issue?</a></p>
+						</div>
+		  			</div>
+		  			<p class="thumbnail-caption"><img class="access-state-icon" src="images/access-state-good.svg"> ArtBase variant: <a href="eaas-template.html">eaas.rhizome.org/</br>example.com</a></p>
+		  		</div>
+		  		<div class="area area-10">
+		  			<div class="date">2019</div>
+		  			<div class="date-dash"></div>
+		  		</div>
+
+		</div>
+	</div>
+	<!--End of main meta info area-->
+
+	<!--Images carousel & caption area-->
+	<div class="artwork-images">
+		<img class="artwork-image" src="images/test-image.jpg">
+		<img class="backward-arrow-icon" src="images/backward-arrow.svg">
+		<img class="forward-arrow-icon" src="images/forward-arrow.svg">
+		<p>Caption: Image generation. Image attribution.</p>
+	</div>
+	<!--End of images area-->
+
+	<!--Access buttons area-->
+	<div class="artwork-access">
+
+			<!--Button 1-->
+			<div class="access-button" data-source="layer1"> 
+				<img class="access-state-icon" src="images/access-state-unknown.svg"> 
+				<div>Access via artist link</div> 
+				<img class="variant-icon" src="images/artist-link.svg">
+				<div class="state-hover">
+					<p class="hover-title"> Access state: </p>
+					<p> <a href="access-state-unknown.html">Unknown – Access point has not been audited by an archivist</a></p><br>
+					<p class="hover-action"> <a href="out-of-scope.html">Report an issue?</a></p>
+				</div>
+			</div>
+			<!--End of button 1-->
+			<!--Info overlay for button 1-->
+			<div class="info-layer-background" data-popup="layer1">
+				<div class="info-layer">
+					<div class="info-layer-header">
+						<img class="access-state-icon" src="images/access-state-unknown.svg"> 
+						<div>Access via artist link</div> 
+						<img class="variant-icon" src="images/artist-link.svg">
+					</div>
+					<p> <a class="property-link" href="property-template.html">Access URL:</a> <a href="out-of-scope.html">example.com</a></p>
+					<p> <a class="property-link" href="property-template.html">Access state:</a> <a href="access-state-unknown.html">Unknown</a></p>
+					<p style="font-weight: bold"> Dependencies: </p>
+					<div class="info-layer-dependencies">
+						<p> Based on the most recent audit of Rhizome’s archival variant, possible dependencies include: </p>
+						<p> <img class="dependencies-icon" src="images/browser-unsupported.svg"> <a class="property-link" href="property-template.html">Browser plug-in:</a> <a href="item-template.html">Java</a> </p>
+						<p> <img class="dependencies-icon" src="images/media-damaged.svg"> <a class="property-link" href="external-media-property.html">External media:</a> <a href="external-media-damaged.html">Damaged </a></p>
+						<p> <img class="dependencies-icon" src="images/links-risk-medium.svg"> <a class="property-link" href="property-template.html">External links risk:</a> <a href="item-template.html">Medium</a> </p>
+					</div>
+					<p class="report-issue"><a href="out-of-scope.html">Report an issue?</a></p>
+					<div class="view-artwork-button"> <a href="out-of-scope.html">
+					View Artwork</a></div>
+				</div>
+			</div>			
+			<!--End of info overlay for button 1-->
+
+			<!--Button 2-->
+			<div class="access-button" data-source="layer2"> 
+				<img class="access-state-icon" src="images/access-state-medium.svg"> 
+				<div>Access via ArtBase variant </div> 
+				<img class="variant-icon" src="images/cloned-copy.svg">
+				<div class="state-hover">
+					<p class="hover-title"> Access state: </p>
+					<p><a href="access-state-medium.html">Medium – Access point has some upsupported or damaged dependencies</a></p><br>
+					<p class="hover-action"><a href="out-of-scope.html">Report an issue?</a></p>
+				</div>
+			</div>
+			<!--End of button 2-->
+			<!--Info overlay for button 2-->
+			<div class="info-layer-background" data-popup="layer2">
+				<div class="info-layer">
+					<div class="info-layer-header">
+						<img class="access-state-icon" src="images/access-state-medium.svg"> 
+						<div>Access via ArtBase variant </div> 
+						<img class="variant-icon" src="images/cloned-copy.svg">
+					</div>
+					<p> <a class="property-link" href="property-template.html">Access URL:</a> <a href="out-of-scope.html">archive.rhizome.org/example.com</a></p>
+					<p> <a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-medium.html">Medium</a></p>
+					<p> <a class="property-link" href="generated-by-property">Generated by:</a> <a href="item-template.html">Cloning</a></p>
+					<p style="font-weight: bold"> Dependencies: </p>
+					<div class="info-layer-dependencies">
+						<p> Based on the most recent audit, the following dependencies affect access to this artwork: </p>
+						<p> <img class="dependencies-icon" src="images/browser-unsupported.svg"> <a class="property-link" href="property-template.html">Browser plug-in:</a> <a href="item-template.html">Java</a> </p>
+						<p> <img class="dependencies-icon" src="images/media-damaged.svg"> <a class="property-link" href="external-media-property.html">External media:</a> <a href="external-media-damaged.html">Damaged </a></p>
+						<p> <img class="dependencies-icon" src="images/links-risk-medium.svg"> <a class="property-link" href="property-template.html">External links risk:</a> <a href="item-template.html">Medium</a> </p>
+					</div>
+					<p class="report-issue"><a href="out-of-scope.html">Report an issue?</a></p>
+					<div class="view-artwork-button"> <a href="out-of-scope.html">
+					View Artwork</a></div>
+				</div>
+			</div>
+			<!--End of info overlay for button 2-->
+
+			<!--Button 3-->
+			<div class="access-button" data-source="layer3"> 
+				<img class="access-state-icon" src="images/access-state-good.svg"> 
+				<div>Access via ArtBase variant </div> 
+				<img class="variant-icon-sm" src="images/webarchive-variant.svg">
+				<div class="state-hover">
+					<p class="hover-title"> Access state: </p>
+					<p><a href="access-state-good.html">Good – Access point has few upsupported or damaged dependencies</a></p><br>
+					<p class="hover-action"><a href="out-of-scope.html">Report an issue?</a></p>
+				</div>
+			</div>
+			<!--End of button 3-->
+			<!--Info overlay for button 3-->
+			<div class="info-layer-background" data-popup="layer3">
+				<div class="info-layer">
+					<div class="info-layer-header">
+						<img class="access-state-icon" src="images/access-state-good.svg"> 
+						<div>Access via ArtBase variant </div> 
+						<img class="variant-icon-sm" src="images/webarchive-variant.svg">
+					</div>
+					<p> <a class="property-link" href="property-template.html">Access URL:</a> <a href="webenact-template.html">webenact.rhizome.org/example.com</a></p>
+					<p> <a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-good.html">Good</a></p>
+					<p> <a class="property-link" href="generated-by-property.html">Generated by:</a> <a href="webrecorder-capture.html">Webrecorder capture</a></p>
+					<p> <a class="property-link" href="property-template.html">Reperformance platform:</a> <a href="item-template.html">Webenact</a></p>
+					<p style="font-weight: bold"> Dependencies: </p>
+					<div class="info-layer-dependencies">
+						<p> Based on the most recent audit, the following dependencies affect access to this artwork: </p>
+						<p> <img class="dependencies-icon" src="images/browser-supported.svg"> <a class="property-link" href="property-template.html">Browser plug-in:</a> <a href="item-template.html">Java</a> </p>
+						<p> <img class="dependencies-icon" src="images/links-risk-low.svg"> <a class="property-link" href="property-template.html">External links risk:</a> <a href="item-template.html">Low</a> </p>
+					</div>
+					<p class="report-issue"><a href="out-of-scope">Report an issue?</a></p>
+					<div class="view-artwork-button"> <a href="webenact-template.html">
+					View Artwork</a></div>
+				</div>
+			</div>
+			<!--End of info overlay for button 3-->
+
+			<!--Button 4-->
+			<div class="access-button" data-source="layer4"> 
+				<img class="access-state-icon" src="images/access-state-good.svg"> 
+				<div>Access via ArtBase variant </div> 
+				<img class="variant-icon" src="images/emulated-variant.svg">
+				<div class="state-hover">
+					<p class="hover-title"> Access state: </p>
+					<p><a href="access-state-good.html">Good – Access point has few upsupported or damaged dependencies</a></p><br>
+					<p class="hover-action"><a href="out-of-scope.html">Report an issue?</a></p>
+				</div>
+			</div>
+			<!--End of button 4-->
+			<!--Info overlay for button 4-->
+			<div class="info-layer-background" data-popup="layer4">
+				<div class="info-layer">
+					<div class="info-layer-header">
+						<img class="access-state-icon" src="images/access-state-good.svg"> 
+						<div>Access via ArtBase variant </div> 
+						<img class="variant-icon" src="images/emulated-variant.svg">
+					</div>
+					<p> <a class="property-link" href="property-template.html">Access URL:</a> <a href="eaas-template.html">eaas.rhizome.org/example.com</a></p>
+					<p> <a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-good.html">Good</a></p>
+					<p> <a class="property-link" href="generated-by-property.html">Generated by:</a> <a href="item-template.html">Emulation</a></p>
+					<p> <a class="property-link" href="property-template.html">Re-performance platform:</a> <a href="item-template.html">Emulation-as-a-Service</a></p>
+					<p style="font-weight: bold"> Dependencies: </p>
+					<div class="info-layer-dependencies">
+						<p>Based on the most recent audit, the following dependencies affect access to this artwork: </p>
+						<p> <img class="dependencies-icon" src="images/environment-supported.svg"> <a class="property-link" href="property-template.html">Environment:</a> <a href="item-template.html">Windows 98</a> </p>
+						<p> <img class="dependencies-icon" src="images/media-damaged.svg"> <a class="property-link" href="external-media-property.html">External media:</a> <a href="external-media-damaged.html">Damaged </a></p>
+						<p> <img class="dependencies-icon" src="images/links-risk-medium.svg"> <a class="property-link" href="property-template.html">External links risk:</a> <a href="item-template.html">Medium</a> </p>
+					</div>
+					<p class="report-issue"><a href="out-of-scope">Report an issue?</a></p>
+					<div class="view-artwork-button"> <a href="eaas-template.html">
+					View Artwork</a></div>
+				</div>
+			</div>
+			<!--End of info overlay for button 3-->
+
+	</div>
+	<!--End of access buttons area-->
+
+	<!--Collapsibles with metadata area-->
+
+	<!--Description collapsible grid area-->
+	<div class="collapsible-area">
+		<!--Description collapsible button-->
+		<button class="collapsible"><h2>Description</h2></button>
+		<!--Description collapsible hidden content-->
+		<div class="content">
+			<!--Description collapsible section 1-->
+  			<div class="content-section">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut tortor nibh. Mauris dapibus tortor eu felis consequat, quis maximus justo dictum. Curabitur elit neque, fringilla ac ullamcorper sed, molestie ac sem. Integer ligula lectus, ultrices at ante at, aliquet commodo nisl. Duis cursus eros non justo finibus sollicitudin. Curabitur in mollis mauris. Fusce vel odio tristique, pellentesque mauris at, vestibulum odio. Phasellus ultrices turpis justo, laoreet maximus neque auctor a. Phasellus pharetra ligula lobortis, volutpat nisi et, vehicula tortor. Aenean semper ipsum ut dolor iaculis tempor consequat at risus.</p>
+			<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ultrices arcu sit amet orci luctus, ac lobortis est placerat. Curabitur mollis odio eget commodo hendrerit. Proin nisi massa, hendrerit non dictum a, sollicitudin non urna. Duis auctor ac massa in facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent risus urna, mattis non finibus in, ultricies sed lectus. Suspendisse sit amet dolor nec metus imperdiet euismod eget at felis. Ut sem mi, posuere sit amet ultrices sed, blandit a dolor.</p>
+			<p class="attribution"> <a href="property-template.html">Attributed to:</a> <a href="artist-template.html">Author name</a><br>
+			<a href="generated-by-property.html" style="text-decoration: none;">Generated by:</a> <a href="item-template.html">Open submission</a></p>
+			</div>
+			<!--Description collapsible section 2-->
+  			<div class="content-section">
+			<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ultrices arcu sit amet orci luctus, ac lobortis est placerat. Curabitur mollis odio eget commodo hendrerit. Proin nisi massa, hendrerit non dictum a, sollicitudin non urna. Duis auctor ac massa in facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent risus urna, mattis non finibus in, ultricies sed lectus. Suspendisse sit amet dolor nec metus imperdiet euismod eget at felis. Ut sem mi, posuere sit amet ultrices sed, blandit a dolor.</p>
+			<p class="attribution"> <a href="property-template.html">Attributed to:</a> <a href="item-template.html">Author name</a><br>
+			<a href="property-template.html" style="text-decoration: none;">Associated with</a> <a href="item-template.html">Rhizome</a></p>
+			</div>
+			<!--Description collapsible section 3-->
+  			<div class="content-section">
+  			<h5>Legacy descriptive tags:</h5>
+  			<p>sample tag; sample tag; sample tag; sample tag; sample tag;</p>
+			<p class="attribution"> <a href="property-template.html">Attributed to:</a> <a href="item-template.html">ArtBase users</a><br>
+			<a href="generated-by-property.html" style="text-decoration: none;">Generated by:</a> <a href="item-template.html">Open submission</a></p>
+			<p>sample tag; sample tag; sample tag; sample tag; sample tag;</p>
+			<p class="attribution"> <a href="property-template.html">Attributed to:</a> <a href="item-template.html">Rhizome</a><br>
+			</div>
+		</div>
+		<!--End of description collapsible hidden content-->
+	</div>
+	<!--End of description collapsible-->
+
+	<!--Metadata collapsible grid area-->
+	<div class="collapsible-area">
+		<!--Metadata collapsible button-->
+		<div class="collapsible metadata-richness">
+			<div class="metadata-richness-state">
+				<img src="images/metadata-richness-high.svg">
+				<div class="state-hover">
+							<p class="hover-title"> Metadata richness: </p>
+							<p> <a href="item-template.html">High – Few missing statements</a></p><br>
+							<p class="hover-action"> <a href="out-of-scope.html">Can you contribute?</a></p>
+				</div>
+			</div>
+			<h2 class="metadata-heading">
+			Metadata
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content">
+			<!--Metadata collapsible section 1-->
+  			<div class="content-section">
+  			<h5>Descriptive data </h5>
+  			<h4><a href="property-template.html">Title:</a> Artwork title</h4>
+  			<h4><a href="property-template.html">Artist:</a> <a href="artist-template.html" class="item-link">Name Surname</a></h4>
+  			<h4><a href="property-template.html">Collaborator:</a> <a href="item-template.html" class="item-link">Name Surname</a></h4>
+  			<h4><a href="property-template.html">Software developer:</a> <a href="item-template.html" class="item-link">Name Surname</a></h4>
+  			<h4><a href="property-template.html">Artwork type:</a> <a href="item-template.html" class="item-link">Website</a></h4>
+  			</div>
+  			<!--Metadata collapsible section 2-->
+  			<div class="content-section">
+  			<h5>Administrative data </h5>
+  			<h4><a href="property-template.html">Date of accession:</a> 19 Jun 2002</h4>
+  			<h4><a href="property-template.html">License:</a> <a href="item-template.html" class="item-link">CC-BY-SA</a></h4>
+  			</div>
+  			<!--Metadata collapsible section 3-->
+  			<div class="content-section" style="padding-bottom: 20px;">
+  			<h5 style="padding-bottom: 0;">Preservation history data </h5>
+  				<!--Nested collapsible #1-->
+	  			<div class="preservation-data collapsible"><h4>Artist link: <a href="out-of-scope.html">www.example.com</a></h4></div>
+				<div class="preservation-data-content">
+					<p><a class="property-link" href="property-template.html">Inception:</a> 2001</p>
+					<p><a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-unknown.html">Unknown – access point has not been audited by an archivist</a></p>
+					<p><a class="property-link" href="property-template.html">Active:</a> 2001–2017</p>
+				</div>
+				<!--Nested collapsible #2-->
+	  			<div class="preservation-data collapsible"><h4>ArtBase variant: <a href="out-of-scope.html">archive.rhizome.org/example.com</a></h4></div>
+				<div class="preservation-data-content">
+					<p><a class="property-link" href="property-template.html">Inception:</a> 2003</p>
+					<p><a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-medium.html">Medium – access point has some unsupported or damaged dependencies</a></p>
+					<p><a class="property-link" href="generated-by-property.html">Generated by:</a> <a href="item-template.html">Cloning</a></p>
+					<p><a class="property-link" href="property-template.html">Associated with:</a> <a href="item-template.html">Rhizome</a></p>
+					<p><a class="property-link" href="property-template.html">Archival plan:</a> <a href="item-template.html">Partial reconstruction</a></p>
+					<p><a class="property-link" href="property-template.html">Browser plug-in:</a> <a href="item-template.html">Java</a></p>
+					<p><a class="property-link" href="external-media-property.html">External media:</a> <a href="external-media-damaged.html">Damaged</a></p>
+					<p><a class="property-link" href="property-template.html">External links risk: </a> <a href="item-template.html">Medium</a></p>
+					<p><a class="property-link" href="property-template.html">Interaction input:</a> <a href="item-template.html">Computer keyboard;</a> <a href="item-template.html">Mouse</a></p>
+				</div>
+				<!--Nested collapsible #3-->
+	  			<div class="preservation-data collapsible"><h4>ArtBase variant: <a href="webenact-template.html">webenact.rhizome.org/example.com</a></h4></div>
+				<div class="preservation-data-content">
+					<p><a class="property-link" href="property-template.html">Inception:</a> 2015</p>
+					<p><a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-good.html">Good – few known dependencies</a></p>
+					<p><a class="property-link" href="generated-by-property.html">Generated by:</a> <a href="webrecorder-capture.html">Webrecorder capture</a></p>
+					<p><a class="property-link" href="property-template.html">Associated with:</a> <a href="item-template.html">Rhizome</a></p>
+					<p><a class="property-link" href="property-template.html">Archival plan:</a> <a href="item-template.html">Exclusion of external links from capture</a></p>
+					<p><a class="property-link" href="property-template.html">Re-performance platform:</a> <a href="item-template.html">Webenact</a></p>
+					<p><a class="property-link" href="property-template.html">Browser plug-in:</a> <a href="item-template.html">Java</a></p>
+					<p><a class="property-link" href="property-template.html">External links risk: </a> <a href="item-template.html">Low</a></p>
+					<p><a class="property-link" href="property-template.html">Interaction input:</a> <a href="item-template.html">Computer keyboard;</a> <a href="item-template.html">Mouse</a></p>
+					<p><a class="property-link" href="property-template.html">Interaction notes:</a> <a href="item-template.html">Read notes here</a></p>
+				</div>
+				<!--Nested collapsible #4-->
+	  			<div class="preservation-data collapsible"><h4>ArtBase variant: <a href="eaas-template.html">eaas.rhizome.org/example.com</a></h4></div>
+				<div class="preservation-data-content">
+					<p><a class="property-link" href="property-template.html">Inception:</a> 2017</p>
+					<p><a class="property-link" href="access-state-property.html">Access state:</a> <a href="access-state-good.html">Good – few known dependencies</a></p>
+					<p><a class="property-link" href="generated-by-property.html">Generated by:</a> <a href="item-template.html">Emulation</a></p>
+					<p><a class="property-link" href="property-template.html">Associated with:</a> <a href="item-template.html">Rhizome</a></p>
+					<p><a class="property-link" href="property-template.html">Re-performance platform:</a> <a href="item-template.html">Emulation-as-a-Service</a></p>
+					<p><a class="property-link" href="property-template.html">Environment</a> <a href="item-template.html">Windows 98</a></p>
+					<p><a class="property-link" href="external-media-property.html">External media:</a> <a href="external-media-damaged.html">Damaged</a></p>
+					<p><a class="property-link" href="property-template.html">External links risk: </a> <a href="item-template.html">Medium</a></p>
+					<p><a class="property-link" href="property-template.html">Interaction input:</a> <a href="item-template.html">Computer keyboard;</a> <a href="item-template.html">Mouse</a></p>
+					<p><a class="property-link" href="property-template.html">Interaction notes:</a> <a href="item-template.html">Read notes here</a></p>
+				</div>
+			<!--Metadata collapsible section 4-->
+			</div>
+  			<div class="content-section">
+  			<h5>Need more data or would like to contribute?
+  			<a class="request-access" href="out-of-scope.html">Request access</a>
+  			</h5>
+  			</div>
+  			<div class="content-section download-section">
+  			<h5>Download metadata record</h5>
+  			<img src="images/download-icon.svg"><p>JSON</p>
+  			<img src="images/download-icon.svg"><p>RDF</p>
+  			</div>
+		</div>
+		<!--End of metadata collapsible hidden content-->
+	</div>
+	<!--End of metadata collapsible-->
+
+	<!--Related artworks collapsible grid area-->
+	<div class="collapsible-area">
+		<button class="collapsible"><h2>Related artworks</h2></button>
+		<div class="content">
+  			<div id="tree-chart-sm">
+  				<div class="tree-chart-column">
+	  				<select>
+							<option selected><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  				<div class="tree-chart-column span-2">
+  					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option selected><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>  	
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p> 
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p> 
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p> 
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+				</div>
+				<div class="tree-chart-column">
+					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option selected><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  			</div>
+  			<div class="tree-chart-open">
+		  		<h5>Open full-screen <img class="full-screen-icon" src="images/full-screen-icon.svg"></h5>
+	  		</div>
+	  		<div class="tree-chart-full-screen">
+	  			<div class="page-title reverse-color">
+	  				<h1>Artwork Title: Related artworks</h1> 
+	  			</div>
+	  			<div class="tree-chart-close">
+	  				<img src="images/close-icon.svg">
+	  			</div>
+				<div class="tree-chart-column">
+	  				<select>
+							<option selected><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  				<div class="tree-chart-column span-2">
+  					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option selected><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>  	
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p> 
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p> 
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p> 
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+				</div>
+				<div class="tree-chart-column">
+					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option selected><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  				<div class="tree-chart-column span-2">
+					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option selected><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  				<div class="tree-chart-column common-dependencies">
+					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option selected><h5>Common dependencies</h5></option>
+							<option><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  				<div class="tree-chart-column common-plan">
+					<select>
+							<option><h5>More by the same artist(s)</h5></option>
+							<option><h5>Common citations</h5></option>
+							<option><h5>Common exhibition history</h5></option>
+							<option><h5>Common tags</h5></option>
+							<option><h5>Common dependencies</h5></option>
+							<option selected><h5>Common archival plan</h5></option>
+					</select>
+  					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+					<h3><a href="out-of-scope.html">Related Artwork Title Goes Here</a></h3>
+					<p class="attribution"> <a href="property-template.html">Inception:</a> 2002</p>
+  				</div>
+  				<!--Styling for button that allows addition of extra columns to tree chart-->
+  				<div class="tree-chart-column extra-column">
+					<select id="add-extra-column">
+							<option value="other"><h5>Add another category of relation</h5></option>
+							<option value="other"><h5>More by the same artist(s) (N/A)</h5></option>
+							<option value="other"><h5>Common citations (N/A)</h5></option>
+							<option value="other"><h5>Common exhibition history (N/A)</h5></option>
+							<option value="other"><h5>Common tags (N/A)</h5></option>
+							<option value="dependencies"><h5>Common dependencies </h5></option>
+							<option value="plan"><h5>Common archival plan </h5></option>
+					</select>
+				</div>
+	  		</div>
+		</div>
+	</div>
+	<!--End of related artworks collapsible-->
+
+	<!--Exhibition history collapsible grid area-->
+	<div class="collapsible-area">
+		<button class="collapsible"><h2>Exhibition history</h2></button>
+		<div class="content">
+			<div class="content-section">
+				<h3><a href="item-template.html">Example Exhibition Title Goes Here</a></h3>
+				<p class="attribution"> <a href="property-template.html">Date:</a> 2002<br>
+				<a href="property-template.html" style="text-decoration: none;">Location:</a> <a href="item-template.html">Postmasters gallery</a></p>
+			</div>
+			<div class="content-section">
+			<h3><a href="item-template.html">Example Exhibition Title Goes Here</a></h3>
+				<p class="attribution"> <a href="property-template.html">Date:</a> 2003<br>
+				<a href="property-template.html" style="text-decoration: none;">Location:</a> <a href="out-of-scope.html">www.onlineexhibtionspace.com</a></p>
+				</div>
+			<div class="content-section">
+				<h3><a href="item-template.html">Example Exhibition Title Goes Here</a></h3>
+				<p class="attribution"> <a href="property-template.html">Date:</a> 2005<br>
+				<a href="property-template.html" style="text-decoration: none;">Location:</a> <a href="item-template.html">New Museum</a></p>
+			</div>
+		</div>
+	</div>
+	<!--End of Exhibition history collapsible-->
+
+	<!--Citations collapsible grid area-->
+	<div class="collapsible-area">
+		<button class="collapsible"><h2>Citations</h2></button>
+		<div class="content">
+  			<div class="content-section">
+				<h3><a href="item-template.html">Example Publication Title Goes Here</a></h3>
+				<p class="attribution"> 
+				<a href="property-template.html">Date:</a> 2005<br>
+				<a href="property-template.html" style="text-decoration: none;">Attributed to:</a> <a href="artist-template.html">Author name</a><br>
+				<a href="property-template.html" style="text-decoration: none;">Source:</a> <a href="item-template.html">Rhizome Blog</a></p>
+			</div>
+			<div class="content-section">
+				<h3><a href="item-template.html">Example Publication Title Goes Here</a></h3>
+				<p class="attribution"> 
+				<a href="property-template.html">Date:</a> 2007<br>
+				<a href="property-template.html" style="text-decoration: none;">Attributed to:</a> <a href="artist-template.html">Author name</a><br>
+				<a href="property-template.html" style="text-decoration: none;">Source:</a> <a href="item-template.html">Media Art Net</a></p>
+			</div>
+			<div class="content-section">
+				<h3><a href="item-template.html">Example Publication Title Goes Here</a></h3>
+				<p class="attribution"> 
+				<a href="property-template.html">Date:</a> 2011<br>
+				<a href="property-template.html" style="text-decoration: none;">Attributed to:</a> <a href="artist-template.html">Author name</a><br>
+				<a href="property-template.html" style="text-decoration: none;">Source:</a> <a href="item-template.html">Rhizome Blog</a></p>
+			</div>
+		</div>
+	</div>
+	<!--End of citations collapsible-->
+
+</main>
+<!--End of main area-->
+
+
+</body>

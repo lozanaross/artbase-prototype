@@ -1,0 +1,19 @@
+<svg id="Group_90" data-name="Group 90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3e3e3e;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #3e3e3e;
+      }
+    </style>
+  </defs>
+  <path id="Path_295" data-name="Path 295" class="cls-1" d="M5,4.333V1H21.667V17.667H18.083" transform="translate(-0.667)"/>
+  <path id="Path_296" data-name="Path 296" class="cls-1" d="M12.917,5H1V21.667H17.667V9.917Z" transform="translate(0 -0.667)"/>
+  <path id="Path_297" data-name="Path 297" class="cls-2" d="M14.4,5v5.5h5.5Z" transform="translate(-2.233 -0.667)"/>
+</svg>

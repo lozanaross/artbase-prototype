@@ -1,0 +1,396 @@
+@font-face {
+	font-family: 'HKGrotesk-Medium';
+	src: url('../fonts/HKGrotesk-Medium.otf') format('otf');
+    font-weight: normal;
+	font-style: normal;
+}
+
+/* Global */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'HKGrotesk-Medium', 'Helvetica Neue', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Navbar styling */
+.nav-bar {
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	position: fixed;
+	top:0;
+	left:0;
+	border-bottom: 2px solid #2740FF;
+	display: grid;
+	grid-template-columns: min-content min-content max-content minmax(min-content, auto) max-content 60px;
+	align-items: center;
+	z-index: 100;
+}
+
+.logos {
+	grid-column: 1/2;
+}
+
+.logo {
+	display: block;
+	max-height: 1.5vw;
+	padding-left: 20px;
+}
+	
+.logo-mobile {
+	display: none;
+	max-height: 20px;
+	padding-left: 15px;
+}
+
+.webenact {
+	grid-column: 2/3;
+	font-size: 32px;
+	font-weight: normal;
+	color: #2740FF;
+	padding: 5px 20px 5px 5px;
+	display: grid;
+	border-right: 2px solid #2740FF;
+}
+
+		.webenact a:link{
+			text-decoration: none;
+			color: #2740FF;
+		}
+
+		.webenact a:visited{
+			text-decoration: none;
+			color: #2740FF;
+
+		}
+
+		.webenact a:hover{
+			text-decoration: none;
+			color: #2740FF;
+		}
+
+.source {
+	grid-column: 3/4;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+.url {
+	grid-column: 4/5;
+	margin-left: 10px;
+	width: fit-content;
+	max-width: 50vw;
+}
+
+.capture {
+	grid-column: 5/6;
+	font-size: 24px;
+	font-weight: normal;
+	color: #2740FF;
+	padding-left: 20px;
+}
+
+/* Sidebar styling */
+
+.mobile-header {
+	display: block;
+}
+
+.mobile-only {
+	display: none;
+}
+
+#sidebar {
+	overflow-y: auto;
+    height: 96%;
+    position: fixed;
+    right: 0;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    transform: translateX(420px);
+    transition: transform 250ms ease-in-out;
+    z-index: 50;
+  	display: grid;
+  	grid-template-rows: repeat(6, min-content) minmax(max-content, auto);
+  	align-items: start;
+  	grid-gap: 10px;
+    background: #000;
+  	border-left: 2px solid #2740FF;
+	padding: 30px;
+}
+
+input[type="checkbox"]:checked ~ #sidebar {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.sidebarIconToggle {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-1 {
+	display: block;
+    position: absolute;
+}
+.icon-2 {
+	display: none;
+	position: absolute;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .icon-1 {
+	display: none;
+
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .icon-2 {
+    display: block;
+
+}
+
+#sidebar div.return {
+	align-self: end;
+}
+
+.level-1 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #2740FF;
+}
+
+			.level-1 a:link {
+				text-decoration: none;
+				color: #2740FF;
+			}
+
+			.level-1 a:visited {
+				text-decoration: none;
+				color: #2740FF;
+			}
+
+			.level-1 a:hover {
+				text-decoration: underline;
+				color: #2740FF;
+			}
+
+p.level-1 {
+	padding-bottom: 5px;
+}
+
+.entry-1 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #DEDEDE;
+	background-color: #343434;
+	padding: 5px;
+	overflow-x: auto;
+}
+
+p.entry-1 {
+	margin-bottom: 10px;
+	width: 340px;
+}
+
+			.entry-1 a:link {
+				text-decoration: underline;
+				color: #DEDEDE;
+			}
+
+			.entry-1 a:visited {
+				text-decoration: underline;
+				color: #DEDEDE;
+			}
+
+			.entry-1 a:hover {
+				text-decoration: underline;
+				color: #2740FF;
+			}
+
+.entry-2 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #DEDEDE;
+}
+
+
+/* Background image */
+.background img {
+	position: fixed;
+	top: 50px;
+	width: 100vw;
+}
+
+.background p {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Background imag for emulation presentation */
+
+.background-environment {
+	position: fixed;
+	background-color: #343434;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto 800px auto;
+	grid-template-rows: auto max-content auto;
+}
+
+.background-environment img {
+	grid-column: 2;
+	grid-row: 2;
+	width: 100%;
+}
+
+.emulator-overlay {
+	grid-column: 2;
+	grid-row: 2;
+	background-color: #343434;
+	opacity: 0.7;
+}
+
+.run-emulator {
+	grid-column: 2;
+	grid-row: 2;
+	align-self: center;
+	justify-self: center;
+	justify-content: center;
+	display: grid;
+    justify-items: center;
+    z-index: 10;
+}
+
+.run-button {
+	background-color: #fff;
+	color: #3e3e3e;
+	padding: 20px 60px;
+	width: fit-content;
+	border-radius: 4px;
+	margin-bottom: 60px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.run-button:hover {
+	color: #2740FF;
+}
+
+.choose-button {
+	background-color: #B4B4B4;
+	color: #3e3e3e;
+	padding: 10px 10px;
+	width: fit-content;
+	border-radius: 4px;
+	font-family: 'Arial', sans-serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
+	display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+select {
+	font-size: 14px;
+}
+
+
+
+/* Media queries for fluid type */
+
+@media screen and (min-width: 320px) {
+	.webenact {
+    	font-size: calc(20px + 14 * (100vw - 320px) / 1600);
+	}
+	.capture {
+    	font-size: calc(18px + 6 * (100vw - 320px) / 1600);
+    }
+    .level-1 {
+    	font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+    }
+    .entry-1, .entry-2 {
+    	font-size: calc(12px + 6 * (100vw - 320px) / 1600);
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+	.webenact {
+   		font-size: 34px;
+	}
+	.capture {
+		font-size: 24px;
+	}
+	.level-1 {
+		font-size: 22px;
+	}
+	.entry-1, .entry-2 {
+		font-size: 18px;
+	}
+}
+
+/* Media queries for column layout */
+
+@media screen and (max-width: 1280px) {
+	.url {
+		max-width: 35vw;
+		white-space: nowrap;
+	}
+
+	#sidebar {
+		width: 380px;
+	    grid-gap: 0;
+	    padding: 20px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-bar {
+		height: 40px;
+		display: grid;
+		grid-template-columns: min-content min-content max-content minmax(min-content, auto) max-content 50px;
+		align-items: center;
+	}
+
+	.logo, .source, .url {
+		display: none;
+	}
+
+	.logo-mobile, .mobile-only {
+		display: block;
+	}
+
+	#sidebar {
+	    margin-top: 40px;
+	}
+
+	.sidebarIconToggle {
+	    top: 5px;
+	    right: 10px;
+	}
+
+	.entry-1 {
+		width: 320px;
+	}
+
+	.background img {
+		top: 40px;
+		width: auto;
+		height: 100%;
+	}
+
