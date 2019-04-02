@@ -567,29 +567,23 @@ main {
 			padding: 20px 0 20px 0;
 		}
 
-		.view-artwork-button {
+		a.view-artwork-button p {
 			background-color: #fff;
 			border-radius: 4px;
 			padding: 20px 0;
 			text-align: center;
 			font-weight: bold;
 			font-size: 16px;
+		}
+
+		a.view-artwork-button {
 			text-decoration: none;
 		}
 
-			.view-artwork-button a:link {
-				text-decoration: none;
-			}
-
-			.view-artwork-button a:visited {
-				text-decoration: none;
-			}
-
-			.view-artwork-button a:hover, .view-artwork-button:hover {
-				background-color: #3e3e3e;
-				color: #fff;
-				text-decoration: none;
-			}
+		a.view-artwork-button p:hover {
+			background-color: #3e3e3e;
+			color: #fff;
+		}
 
 
 /* Styling collapsibles */
