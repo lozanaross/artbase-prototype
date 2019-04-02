@@ -1503,7 +1503,7 @@ main {
 
 	/* Styling for other content templates */
 
-	.linked-content {
+	a.linked-content {
 		grid-column: 7/span 6;
 		grid-row: 1/span 2;
 		align-self: end;
@@ -1514,16 +1514,15 @@ main {
 		border-radius: 4px;
 		font-weight: bold;
 		z-index: 100;
-	}
-
-	.linked-content:hover {
-		background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(240,240,240,1) 100%);
-	}
-
-	.linked-content a:link, .linked-content a:hover {
 		text-decoration: none;
 		color: #3E3E3E;
-	} 
+	}
+
+	a.linked-content:hover {
+		background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(240,240,240,1) 100%);
+		text-decoration: none;
+		color: #3E3E3E;
+	}
 
 	.lead-image {
 		grid-column: 1/span 5;
