@@ -518,6 +518,10 @@ main {
 		    font-weight: bold;
 		}
 
+			.info-layer-header a:link {
+				text-decoration: none;
+			}
+
 		.info-layer p {
 			font-weight: normal;
 			color: #767676;
@@ -702,6 +706,11 @@ main {
 	.preservation-data h4 {
 		padding: 0 0;
 	}
+
+		h4 a.variant-item:link {
+			text-decoration: none;
+			font-weight: normal;
+		}
 
 		h4 a.item-link:link {
 			text-decoration: underline;
