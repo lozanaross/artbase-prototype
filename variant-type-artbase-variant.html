@@ -1,0 +1,130 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ArtBase prototype</title>
+	<link rel="stylesheet" type="text/css" href="css/prototype.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/prototype.js"></script>
+</head>
+<body>
+
+<!--Nav bar-->
+<div class="nav-bar">
+	<div class="logos">
+		<a href="http://rhizome.org/"><img class="logo" src="images/Rhizome_Logo_black.png"></a>
+		<img class="logo-mobile" src="images/Rhizome_Logo_black_mobile.png">
+	</div>
+	<div class="artbase-logo"> <a href="index.html">ARTBASE</a></div>
+	<div class="menu">
+		<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+		<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+		<ul><a href="out-of-scope.html">Curated selections</a></ul>
+	</div>
+	<div class="search-box">
+		<input type="text" placeholder="Keyword search">
+		<a href="search-results.html"><img src="images/search_icon.svg"></a>
+	</div>
+</div>
+<!--End of navbar-->
+
+<!--End of mobile navbar-->
+<div class="mobile-header">
+  <input type="checkbox" class="openSidebar" id="openSidebar">
+  <label for="openSidebar" class="sidebarIconToggle">
+    <img class="icon-1" src="images/mobile-menu-icon.svg">
+    <img class="icon-2" src="images/close-icon-dark.svg">
+  </label>
+  <div id="sidebar">
+		<div class="mobile-only-menu">
+			<ul><a href="out-of-scope.html">History of the ArtBase</a></ul>
+			<ul><a href="browse-the-archive.html">Browse the archive</a></ul>
+			<ul><a href="out-of-scope.html">Curated selections</a></ul>
+				<div class="search-box-mobile">
+					<input type="text" placeholder="Keyword search">
+					<a href="search-results.html"><img src="images/search_icon.svg"></a>
+				</div>
+				<ul class="position-bottom-edge"><a href="http://rhizome.org/">Back to rhizome.org</a></ul>
+		</div>
+   </div>
+</div>
+<!--End of mobile navbar-->
+
+<!--Main content-->
+<main>
+
+	<!--Main meta info area-->
+	<div class="page-title"> 
+		<h1>ArtBase variant</h1> 
+	</div>
+	<div class="data-type">
+		<div class="data-type-field">Item</div>
+	</div>
+	<!--End of main meta info area-->
+
+	<a href="out-of-scope.html" class="linked-content">
+		Artworks associated with this item
+	</a>
+
+	<!--Metadata grid area-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Description
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section">
+	  			<p>An ArtBase variant is an instantiation of the artwork under the custody of Rhizome. Most ArtBase variants are created by the Rhizome preservation team, using a variety of generation processes, such as Cloning, Webrecorder capture, Emulated re-performance, etc. Rhizome takes responsibility for recording the access state of these links and providing better access whenever possible.</p>
+  			</div>
+		</div>
+	</div>
+
+	<!--Metadata grid area #2-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Associated properties
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section" style="padding-bottom: 20px;">
+  				<div class="associated-values">
+	  			<h4><a href="property-template.html">Instance of</a></h4>
+	  			<p class="value-description-last">Description: Denotes that an item is a specific example and a member of that class.</p>
+	  			</div>
+  			</div>
+		</div>
+	</div>
+
+	<!--Metadata grid area #3-->
+	<div class="collapsible-area">
+		<!--Metadata button-->
+		<div class="metadata-open">
+			<h2>
+			Matadata
+			</h2>
+		</div>
+		<!--Metadata collapsible hidden content-->
+		<div class="content" style="display: block;">
+			<!--Metadata section 1-->
+  			<div class="content-section" style="padding-bottom: 20px;">
+  				<h4><a href="property-template.html">Subclass of:</a> <a href="variant-item.html" class="item-link">Variant</a></h4>
+  			</div>
+		</div>
+	</div>
+
+	<!--End of metadata area-->
+
+	
+</main>
+<!--End of main area-->
+
+
+</body>
